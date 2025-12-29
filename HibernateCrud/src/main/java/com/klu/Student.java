@@ -1,6 +1,6 @@
 package com.klu;
 
-import javax.persistence.Entity;
+import javax.persistence.*;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -9,6 +9,7 @@ import javax.persistence.Table;
 public class Student {
 
 @Id
+@GeneratedValue(strategy=GenerationType.IDENTITY)
 private int id;
 private String name;
 private int marks;
